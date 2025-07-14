@@ -8,7 +8,7 @@ const Index = () => {
     // Redirect to home page
     navigate("/");
   }, [navigate]);
-
+  
   return null;
 };
 
