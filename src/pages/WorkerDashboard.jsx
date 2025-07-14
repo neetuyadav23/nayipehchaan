@@ -33,7 +33,7 @@ export default function WorkerDashboard() {
     startDate: "",
     endDate: "",
     description: "",
-    certificate: null as File | null
+    certificate: null
   });
 
   const workHistory = [
