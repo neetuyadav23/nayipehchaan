@@ -19,18 +19,18 @@ export default function WorkerRegistration() {
     address: "",
     phoneNumber: "",
     aadharNumber: "",
-    profilePhoto: null as File | null
+    profilePhoto: null
   });
 
-  const handleInputChange = (field: string, value: string) => {
+  const handleInputChange = (field, value) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
-  const handleFileChange = (file: File | null) => {
+  const handleFileChange = (file) => {
     setFormData(prev => ({ ...prev, profilePhoto: file }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     toast({
       title: "Registration Successful!",
